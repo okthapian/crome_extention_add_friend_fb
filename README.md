@@ -57,7 +57,7 @@ crome_extention_add_friend_fb
 
 ## ▶️ How to Use
 
-1. Open Facebook (example: People You May Know page)
+1. Open Facebook (recommended page below 👇)
 2. Click the extension icon
 3. Set your preferences:
    - **Interval (seconds)** → delay between clicks
@@ -69,6 +69,16 @@ crome_extention_add_friend_fb
 6. Click:
    ⛔ Stop  
    to stop anytime
+
+---
+
+## 🌐 Recommended Page
+
+Use this page to find "Add Friend" buttons:
+
+👉 https://web.facebook.com/friends/suggestions
+
+This page shows **People You May Know**, which is ideal for this extension.
 
 ---
 
@@ -98,6 +108,19 @@ Recommended:
 - Avoid adding too many people in a short time
 - Act like a normal user
 - Do not run continuously for hours
+
+---
+
+## 🙏 Respect the Project
+
+Please don't just take and use this project without any appreciation.  
+If you find this useful, it's better to:
+
+- ⭐ Give a star to this repository  
+- 💬 Ask permission if you want to reuse or modify  
+- ☕ Or consider giving a small donation (for internet quota hehe 😄)
+
+Your support means a lot!
 
 ---
 
