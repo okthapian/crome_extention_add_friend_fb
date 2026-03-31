@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Add Friend</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      padding: 10px;
+      width: 280px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 14px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    h3 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #1f2937;
+    }
+
+    label {
+      font-size: 13px;
+      color: #4b5563;
+      margin-top: 10px;
+      display: block;
+    }
+
+    .row {
+      display: flex;
+      gap: 6px;
+      margin-top: 5px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 6px;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      outline: none;
+      font-size: 13px;
+    }
+
+    input[type="number"]:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      font-size: 13px;
+      color: #374151;
+    }
+
+    button {
+      width: 100%;
+      padding: 8px;
+      border-radius: 10px;
+      border: none;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn-check {
+      background: #e5e7eb;
+      color: #111827;
+    }
+
+    .btn-check:hover {
+      background: #d1d5db;
+    }
+
+    .btn-start {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .btn-start:hover {
+      background: #2563eb;
+    }
+
+    .btn-stop {
+      background: #ef4444;
+      color: white;
+    }
+
+    .btn-stop:hover {
+      background: #dc2626;
+    }
+
+    .buttons {
+      margin-top: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    #result {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #374151;
+    }
+
+    .progress-box {
+      margin-top: 10px;
+      padding: 8px;
+      background: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      font-size: 13px;
+      font-weight: 500;
+      color: #111827;
+    }
+
+    .footer {
+      margin-top: 12px;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #3b82f6;
+      text-decoration: none;
+      display: block;
+      margin-top: 4px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <h3> Auto Add Friend</h3>
+
+    <label>Interval (seconds)</label>
+    <div class="row">
+      <input id="min" type="number" value="60" placeholder="Min">
+      <input id="max" type="number" value="240" placeholder="Max">
+    </div>
+
+    <label>Max Add Friend</label>
+    <input id="limit" type="number" value="50">
+
+    <label class="checkbox">
+      <input type="checkbox" id="mutual">
+      Only mutual friends
+    </label>
+
+    <div class="buttons">
+      <button id="check" class="btn-check">Check Buttons</button>
+      <button id="start" class="btn-start"> Start Adding</button>
+      <button id="stop" class="btn-stop"> Stop</button>
+    </div>
+
+    <p id="result"></p>
+
+    <div class="progress-box">
+      <p id="progress">Progress: 0</p>
+    </div>
+
+    <!--  FOOTER -->
+    <div class="footer">
+      <a href="https://github.com/okthapian/crome_extention_add_friend_fb" target="_blank">
+         View on GitHub
+      </a>
+
+      <a href="https://okthapian.github.io" target="_blank">
+         Developer Page
+      </a>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+
+</body>
+</html>
